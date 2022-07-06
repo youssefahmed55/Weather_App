@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@color/backGroundColor"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relative1_weekForecast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/backImage_weekForecast"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/_2sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/locationTextView_weekForecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nextWeekTextView_weekForecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/white"
+        android:text="@string/next_week"
+        app:layout_constraintTop_toBottomOf="@id/relative1_weekForecast"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:textSize="@dimen/_14ssp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_weekForecast"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constrainedHeight="true"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/nextWeekTextView_weekForecast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

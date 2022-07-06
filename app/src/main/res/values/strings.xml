@@ -1,0 +1,493 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="feels_like">FEELS LIKE</string>
+    <string name="wind">WIND</string>
+    <string name="pressure">PRESSURE</string>
+    <string name="humidity">HUMIDITY</string>
+
+    <string name="Abu_Dhabi">Abu Dhabi</string>
+    <string name="Abuja">Abuja</string>
+    <string name="Accra">Accra</string>
+    <string name="Adamstown">Adamstown</string>
+    <string name="Addis_Ababa">Addis Ababa</string>
+    <string name="Algiers">Algiers</string>
+    <string name="Alofi">Alofi</string>
+    <string name="Amman">Amman</string>
+    <string name="Amsterdam">Amsterdam</string>
+    <string name="Andorra_la_Vella">Andorra la Vella</string>
+    <string name="Ankara">Ankara</string>
+    <string name="Antananarivo">Antananarivo</string>
+    <string name="Apia">Apia</string>
+    <string name="Ashgabat">Ashgabat</string>
+    <string name="Asmara">Asmara</string>
+    <string name="Nur_Sultan">Nur-Sultan</string>
+    <string name="Asunción">Asunción</string>
+    <string name="Athens">Athens</string>
+    <string name="Avarua">Avarua</string>
+    <string name="Baghdad">Baghdad</string>
+    <string name="Baku">Baku</string>
+    <string name="Bamako">Bamako</string>
+    <string name="Bandar_Seri_Begawan">Brunei Town</string>
+    <string name="Bangkok">Bangkok</string>
+    <string name="Bangui">Bangui</string>
+    <string name="City_of_Banjul">City of Banjul</string>
+    <string name="Basseterre">Basseterre</string>
+    <string name="Beijing">Beijing</string>
+    <string name="Beirut">Beirut</string>
+    <string name="Belfast">Belfast</string>
+    <string name="Belgrade">Belgrade</string>
+    <string name="Belmopan">Belmopan</string>
+    <string name="Berlin">Berlin</string>
+    <string name="Bern">Bern</string>
+    <string name="Bishkek">Bishkek</string>
+    <string name="Bissau">Bissau</string>
+    <string name="Bogotá">Bogotá</string>
+    <string name="Brasília">Brasília</string>
+    <string name="Bratislava">Bratislava</string>
+    <string name="Brazzaville">Brazzaville</string>
+    <string name="Bridgetown">Bridgetown</string>
+    <string name="Brussels">Brussels</string>
+    <string name="Bucharest">Bucharest</string>
+    <string name="Budapest">Budapest</string>
+    <string name="Buenos_Aires">Buenos Aires</string>
+    <string name="Bujumbura">Bujumbura</string>
+    <string name="Cairo">Cairo</string>
+    <string name="Canberra">Canberra</string>
+    <string name="Caracas">Caracas</string>
+    <string name="Cardiff">Cardiff</string>
+    <string name="Castries">Castries</string>
+    <string name="Cayenne">Cayenne</string>
+    <string name="Charlotte_Amalie">Charlotte Amalie</string>
+    <string name="Chisinau">Chisinau</string>
+    <string name="Cockburn_Town">Cockburn Town</string>
+    <string name="Conakry">Conakry</string>
+    <string name="Copenhagen">Copenhagen</string>
+    <string name="Dakar">Dakar</string>
+    <string name="Damascus">Damascus</string>
+    <string name="Dhaka">Dhaka</string>
+    <string name="Dili">Dili</string>
+    <string name="Djibouti">Djibouti</string>
+    <string name="Dodoma">Dodoma</string>
+    <string name="Doha">Doha</string>
+    <string name="Douglas">Douglas</string>
+    <string name="Dublin">Dublin</string>
+    <string name="Dushanbe">Dushanbe</string>
+    <string name="Edinburgh">Edinburgh</string>
+    <string name="El_Aaiún">Laayoune</string>
+    <string name="Lahore_Cantonment">Lahore Cantonment</string>
+    <string name="Flying_Fish_Cove">Flying Fish Cove</string>
+    <string name="Freetown">Freetown</string>
+    <string name="Funafuti">Funafuti</string>
+    <string name="Gaborone">Gaborone</string>
+    <string name="George_Town">George Town</string>
+    <string name="Grytviken">Grytviken</string>
+    <string name="Guatemala_City">Guatemala City</string>
+    <string name="Gustavia">Gustavia</string>
+    <string name="Hagåtña">Hagåtña</string>
+    <string name="Hamilton">Hamilton</string>
+    <string name="Hanga_Roa">Hanga Roa</string>
+    <string name="Hanoi">Hanoi</string>
+    <string name="Harare">Harare</string>
+    <string name="Hargeisa">Hargeisa</string>
+    <string name="Havana">Havana</string>
+    <string name="Helsinki">Helsinki</string>
+    <string name="Honiara">Honiara</string>
+    <string name="Islamabad">Islamabad</string>
+    <string name="Jakarta">Jakarta</string>
+    <string name="Jamestown">Jamestown</string>
+    <string name="Jerusalem">Jerusalem</string>
+    <string name="Juba">Juba</string>
+    <string name="Kabul">Kabul</string>
+    <string name="Kampala">Kampala</string>
+    <string name="Kathmandu">Kathmandu</string>
+    <string name="Khartoum">Khartoum</string>
+    <string name="Kiev">Kiev</string>
+    <string name="Kigali">Kigali</string>
+    <string name="Kingston">Kingston</string>
+    <string name="Kingstown">Kingstown</string>
+    <string name="Kinshasa">Kinshasa</string>
+    <string name="Kuala_Lumpur">Kuala Lumpur</string>
+    <string name="Kuwait_City">Kuwait City</string>
+    <string name="La_Paz">La Paz</string>
+    <string name="Libreville">Libreville</string>
+    <string name="Lilongwe">Lilongwe</string>
+    <string name="Lima">Lima</string>
+    <string name="Lisbon">Lisbon</string>
+    <string name="Ljubljana">Ljubljana</string>
+    <string name="Lomé">Lomé</string>
+    <string name="London">London</string>
+    <string name="Luanda">Luanda</string>
+    <string name="Lusaka">Lusaka</string>
+    <string name="Luxembourg">Luxembourg Province</string>
+    <string name="Madrid">Madrid</string>
+    <string name="Majuro">Majuro</string>
+    <string name="Malabo">Malabo</string>
+    <string name="Malé">Malé</string>
+    <string name="Managua">Managua</string>
+    <string name="Manama">Manama</string>
+    <string name="Manila">Manila</string>
+    <string name="Maputo">Maputo</string>
+    <string name="Marigot">Marigot</string>
+    <string name="Maseru">Maseru</string>
+    <string name="Mata_Utu">Mata-Utu</string>
+    <string name="Mbabane">Mbabane</string>
+    <string name="Mexico_City">Mexico City</string>
+    <string name="Minsk">Minsk</string>
+    <string name="Mogadishu">Mogadishu</string>
+    <string name="Monaco">Monaco</string>
+    <string name="Monrovia">Monrovia</string>
+    <string name="Montevideo">Montevideo</string>
+    <string name="Moroni">Moroni</string>
+    <string name="Moscow">Moscow</string>
+    <string name="Muscat">Muscat</string>
+    <string name="Nairobi">Nairobi</string>
+    <string name="Nassau">Nassau</string>
+    <string name="Naypyidaw">Naypyidaw</string>
+    <string name="N_Djamena">N\'Djamena</string>
+    <string name="New_Delhi">New Delhi</string>
+    <string name="Niamey">Niamey</string>
+    <string name="Nicosia">Nicosia</string>
+    <string name="Nouakchott">Nouakchott</string>
+    <string name="Nouméa">Nouméa</string>
+    <string name="Nuku_alofa">Nuku\'alofa</string>
+    <string name="Nuuk">Nuuk</string>
+    <string name="Oranjestad">Oranjestad</string>
+    <string name="Oslo">Oslo</string>
+    <string name="Ottawa">Ottawa</string>
+    <string name="Ouagadougou">Ouagadougou</string>
+    <string name="Pago_Pago">Pago Pago</string>
+    <string name="Palikir">Palikir</string>
+    <string name="Panama_City">Panama City</string>
+    <string name="Papeete">Papeete</string>
+    <string name="Distrikt_Paramaribo">Distrikt Paramaribo</string>
+    <string name="Paris">Paris</string>
+    <string name="Philipsburg">Philipsburg</string>
+    <string name="Phnom_Penh">Phnom Penh</string>
+    <string name="Plymouth">Plymouth</string>
+    <string name="Podgorica">Podgorica</string>
+    <string name="Port_Louis">Port Louis</string>
+    <string name="Port_Moresby">Port Moresby</string>
+    <string name="Port_Vila">Port-Vila</string>
+    <string name="Port_au_Prince">Port-au-Prince</string>
+    <string name="Port_of_Spain">Port of Spain</string>
+    <string name="Porto_Novo">Porto-Novo</string>
+    <string name="Prague">Prague</string>
+    <string name="Praia">Praia</string>
+    <string name="Pretoria">Pretoria</string>
+    <string name="Pyongyang">Pyongyang</string>
+    <string name="Quito">Quito</string>
+    <string name="Rabat">Rabat</string>
+    <string name="Reykjavík">Reykjavík</string>
+    <string name="Riga">Riga</string>
+    <string name="Riyadh">Riyadh</string>
+    <string name="Road_Town">Road Town</string>
+    <string name="Rome">Rome</string>
+    <string name="Roseau">Roseau</string>
+    <string name="Saipan">Saipan</string>
+    <string name="San_José">San José</string>
+    <string name="San_Juan">San Juan</string>
+    <string name="San_Marino">San Marino</string>
+    <string name="San_Salvador">San Salvador</string>
+    <string name="Sanaa">Sana\'a</string>
+    <string name="Santiago">Santiago</string>
+    <string name="Santo_Domingo">Santo Domingo</string>
+    <string name="São_Tomé">São Tomé</string>
+    <string name="Sarajevo">Sarajevo</string>
+    <string name="Seoul">Seoul</string>
+    <string name="Singapore">Singapore</string>
+    <string name="Skopje">Skopje</string>
+    <string name="Sofia">Sofia</string>
+    <string name="Tarawa">Tarawa</string>
+    <string name="St_Georges">St. George\'s</string>
+    <string name="St_Helier">St. Helier</string>
+    <string name="St_Johns">St. John\'s</string>
+    <string name="St_Pierre">St. Pierre</string>
+    <string name="Stanley">Stanley</string>
+    <string name="Stepanakert">Stepanakert</string>
+    <string name="Stockholm">Stockholm</string>
+    <string name="Sucre">Sucre</string>
+    <string name="Sukhumi">Sukhumi</string>
+    <string name="Suva">Suva</string>
+    <string name="Taipei">Taipei</string>
+    <string name="Tallinn">Tallinn</string>
+    <string name="Tashkent">Tashkent</string>
+    <string name="Tbilisi">Tbilisi</string>
+    <string name="Tegucigalpa">Tegucigalpa</string>
+    <string name="Tehran">Tehran</string>
+    <string name="Thimphu">Thimphu</string>
+    <string name="Tirana">Tirana</string>
+    <string name="Tiraspol">Tiraspol</string>
+    <string name="Tokyo">Tokyo</string>
+    <string name="Tórshavn">Tórshavn</string>
+    <string name="Tripoli">Tripoli</string>
+    <string name="Ts_khinvali">Ts\'khinvali</string>
+    <string name="Tunis">Tunis</string>
+    <string name="Ulaanbaatar">Ulaanbaatar</string>
+    <string name="Vaduz">Vaduz</string>
+    <string name="Valletta">Valletta</string>
+    <string name="The_Valley">The Valley</string>
+    <string name="Vatican_City">Vatican City</string>
+    <string name="Victoria">Hong Kong</string>
+    <string name="Vienna">Vienna</string>
+    <string name="Vientiane">Vientiane</string>
+    <string name="Vilnius">Vilnius</string>
+    <string name="Warsaw">Warsaw</string>
+    <string name="Washington">Washington</string>
+    <string name="Wellington">Wellington</string>
+    <string name="West_Island">West Island</string>
+    <string name="Willemstad">Willemstad</string>
+    <string name="Windhoek">Windhoek</string>
+    <string name="Yamoussoukro">Yamoussoukro</string>
+    <string name="Yaoundé">Yaoundé</string>
+    <string name="Yaren">Yaren</string>
+    <string name="Yerevan">Yerevan</string>
+    <string name="Zagreb">Donji grad</string>
+    <string name="Kmj">Km/h</string>
+    <string name="mbar">mbar</string>
+    <string name="Noo_Network_Connection">No Network Connection</string>
+    <string name="next_week">Next Week</string>
+    <string name="check_internet_connection">Please Check Internet Connection (Problem Get Data From Host)</string>
+
+
+    <string-array name="countries">
+        <item>Abu Dhabi</item>
+        <item>Abuja</item>
+        <item>Accra</item>
+        <item>Adamstown</item>
+        <item>Addis Ababa</item>
+        <item>Algiers</item>
+        <item>Alofi</item>
+        <item>Amman</item>
+        <item>Amsterdam</item>
+        <item>Andorra la Vella</item>
+        <item>Ankara</item>
+        <item>Antananarivo</item>
+        <item>Apia</item>
+        <item>Ashgabat</item>
+        <item>Asmara</item>
+        <item>Nur-Sultan</item>
+        <item>Asunción</item>
+        <item>Athens</item>
+        <item>Avarua</item>
+        <item>Baghdad</item>
+        <item>Baku</item>
+        <item>Bamako</item>
+        <item>Brunei Town</item>
+        <item>Bangkok</item>
+        <item>Bangui</item>
+        <item>City of Banjul</item>
+        <item>Basseterre</item>
+        <item>Beijing</item>
+        <item>Beirut</item>
+        <item>Belfast</item>
+        <item>Belgrade</item>
+        <item>Belmopan</item>
+        <item>Berlin</item>
+        <item>Bern</item>
+        <item>Bishkek</item>
+        <item>Bissau</item>
+        <item>Bogotá</item>
+        <item>Brasília</item>
+        <item>Bratislava</item>
+        <item>Brazzaville</item>
+        <item>Bridgetown</item>
+        <item>Brussels</item>
+        <item>Bucharest</item>
+        <item>Budapest</item>
+        <item>Buenos Aires</item>
+        <item>Bujumbura</item>
+        <item>Cairo</item>
+        <item>Canberra</item>
+        <item>Caracas</item>
+        <item>Cardiff</item>
+        <item>Castries</item>
+        <item>Cayenne</item>
+        <item>Charlotte Amalie</item>
+        <item>Chisinau</item>
+        <item>Cockburn Town</item>
+        <item>Conakry</item>
+        <item>Copenhagen</item>
+        <item>Dakar</item>
+        <item>Damascus</item>
+        <item>Dhaka</item>
+        <item>Dili</item>
+        <item>Djibouti</item>
+        <item>Dodoma</item>
+        <item>Doha</item>
+        <item>Douglas</item>
+        <item>Dublin</item>
+        <item>Dushanbe</item>
+        <item>Edinburgh</item>
+        <item>Laayoune</item>
+        <item>Lahore Cantonment</item>
+        <item>Flying Fish Cove</item>
+        <item>Freetown</item>
+        <item>Funafuti</item>
+        <item>Gaborone</item>
+        <item>George Town</item>
+        <item>Grytviken</item>
+        <item>Guatemala City</item>
+        <item>Gustavia</item>
+        <item>Hagåtña</item>
+        <item>Hamilton</item>
+        <item>Hanga Roa</item>
+        <item>Hanoi</item>
+        <item>Harare</item>
+        <item>Hargeisa</item>
+        <item>Havana</item>
+        <item>Helsinki</item>
+        <item>Honiara</item>
+        <item>Islamabad</item>
+        <item>Jakarta</item>
+        <item>Jamestown</item>
+        <item>Jerusalem</item>
+        <item>Juba</item>
+        <item>Kabul</item>
+        <item>Kampala</item>
+        <item>Kathmandu</item>
+        <item>Khartoum</item>
+        <item>Kiev</item>
+        <item>Kigali</item>
+        <item>Kingston</item>
+        <item>Kingstown</item>
+        <item>Kinshasa</item>
+        <item>Kuala Lumpur</item>
+        <item>Kuwait City</item>
+        <item>La Paz</item>
+        <item>Libreville</item>
+        <item>Lilongwe</item>
+        <item>Lima</item>
+        <item>Lisbon</item>
+        <item>Ljubljana</item>
+        <item>Lomé</item>
+        <item>London</item>
+        <item>Luanda</item>
+        <item>Lusaka</item>
+        <item>Luxembourg Province</item>
+        <item>Madrid</item>
+        <item>Majuro</item>
+        <item>Malabo</item>
+        <item>Malé</item>
+        <item>Managua</item>
+        <item>Manama</item>
+        <item>Manila</item>
+        <item>Maputo</item>
+        <item>Marigot</item>
+        <item>Maseru</item>
+        <item>Mata-Utu</item>
+        <item>Mbabane</item>
+        <item>Mexico City</item>
+        <item>Minsk</item>
+        <item>Mogadishu</item>
+        <item>Monaco</item>
+        <item>Monrovia</item>
+        <item>Montevideo</item>
+        <item>Moroni</item>
+        <item>Moscow</item>
+        <item>Muscat</item>
+        <item>Nairobi</item>
+        <item>Nassau</item>
+        <item>Naypyidaw</item>
+        <item>N\'Djamena</item>
+        <item>New Delhi</item>
+        <item>Niamey</item>
+        <item>Nicosia</item>
+        <item>Nouakchott</item>
+        <item>Nouméa</item>
+        <item>Nuku\'alofa</item>
+        <item>Nuuk</item>
+        <item>Oranjestad</item>
+        <item>Oslo</item>
+        <item>Ottawa</item>
+        <item>Ouagadougou</item>
+        <item>Pago Pago</item>
+        <item>Palikir</item>
+        <item>Panama City</item>
+        <item>Papeete</item>
+        <item>Distrikt Paramaribo</item>
+        <item>Paris</item>
+        <item>Philipsburg</item>
+        <item>Phnom Penh</item>
+        <item>Plymouth</item>
+        <item>Podgorica</item>
+        <item>Port Louis</item>
+        <item>Port Moresby</item>
+        <item>Port-Vila</item>
+        <item>Port-au-Prince</item>
+        <item>Port of Spain</item>
+        <item>Porto-Novo</item>
+        <item>Prague</item>
+        <item>Praia</item>
+        <item>Pretoria</item>
+        <item>Pyongyang</item>
+        <item>Quito</item>
+        <item>Rabat</item>
+        <item>Reykjavík</item>
+        <item>Riga</item>
+        <item>Riyadh</item>
+        <item>Road Town</item>
+        <item>Rome</item>
+        <item>Roseau</item>
+        <item>Saipan</item>
+        <item>San José</item>
+        <item>San Juan</item>
+        <item>San Marino</item>
+        <item>San Salvador</item>
+        <item>Sana\'a</item>
+        <item>Santiago</item>
+        <item>Santo Domingo</item>
+        <item>São Tomé</item>
+        <item>Sarajevo</item>
+        <item>Seoul</item>
+        <item>Singapore</item>
+        <item>Skopje</item>
+        <item>Sofia</item>
+        <item>Tarawa</item>
+        <item>St. George\'s</item>
+        <item>St. Helier</item>
+        <item>St. John\'s</item>
+        <item>St. Pierre</item>
+        <item>Stanley</item>
+        <item>Stepanakert</item>
+        <item>Stockholm</item>
+        <item>Sucre</item>
+        <item>Sukhumi</item>
+        <item>Suva</item>
+        <item>Taipei</item>
+        <item>Tallinn</item>
+        <item>Tashkent</item>
+        <item>Tbilisi</item>
+        <item>Tegucigalpa</item>
+        <item>Tehran</item>
+        <item>Thimphu</item>
+        <item>Tirana</item>
+        <item>Tiraspol</item>
+        <item>Tokyo</item>
+        <item>Tórshavn</item>
+        <item>Tripoli</item>
+        <item>Ts\'khinvali</item>
+        <item>Tunis</item>
+        <item>Ulaanbaatar</item>
+        <item>Vaduz</item>
+        <item>Valletta</item>
+        <item>The Valley</item>
+        <item>Vatican City</item>
+        <item>Hong Kong</item>
+        <item>Vienna</item>
+        <item>Vientiane</item>
+        <item>Vilnius</item>
+        <item>Warsaw</item>
+        <item>Washington</item>
+        <item>Wellington</item>
+        <item>West Island</item>
+        <item>Willemstad</item>
+        <item>Windhoek</item>
+        <item>Yamoussoukro</item>
+        <item>Yaoundé</item>
+        <item>Yaren</item>
+        <item>Yerevan</item>
+        <item>Donji grad</item>
+    </string-array>
+</resources>
