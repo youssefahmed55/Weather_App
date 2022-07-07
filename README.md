@@ -14,6 +14,7 @@
 - The Application supports English and Arabic languages
 - The Project is written in Kotlin
 - Using Mvi And Mvvm Architecture
+- Using View Binding And Data Binding
 - The Application can be used to know the weather at present, the coming hours and the following week for the current location or the location chosen by the user
 
 
