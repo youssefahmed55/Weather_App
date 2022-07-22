@@ -5,7 +5,7 @@
         <data>
           <variable
               name="item"
-              type="com.weather.weatherapp.pojo.HourlyItem" />
+              type="com.weatherrrrrr.weatherapp.pojo.HourlyItem" />
         </data>
 
         <com.google.android.material.card.MaterialCardView
