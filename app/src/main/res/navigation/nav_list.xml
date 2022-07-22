@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.example.weatherapp.ui.SplashFragment"
+        android:name="com.weather.weatherapp.ui.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.weatherapp.ui.home.HomeFragment"
+        android:name="com.weather.weatherapp.ui.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/weekForecastFragment"
-        android:name="com.example.weatherapp.ui.weekforecast.WeekForecastFragment"
+        android:name="com.weather.weatherapp.ui.weekforecast.WeekForecastFragment"
         android:label="fragment_week_forecast"
         tools:layout="@layout/fragment_week_forecast" />
 </navigation>

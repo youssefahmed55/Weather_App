@@ -5,7 +5,7 @@
 
         <variable
             name="item"
-            type="com.example.weatherapp.pojo.DailyItem" />
+            type="com.weather.weatherapp.pojo.DailyItem" />
 
     </data>
 
