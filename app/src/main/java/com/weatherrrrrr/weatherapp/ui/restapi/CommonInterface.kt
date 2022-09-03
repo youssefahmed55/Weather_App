@@ -6,7 +6,7 @@ import retrofit2.http.Query
 
 interface CommonInterface {
     companion object{
-        private const val appId = "bb9c8b4fcbcef448a15c0a10d751b0b3"
+        private const val appId = "" //<-You Can Write appId Here
         private const val units = "metric"
     }
 
