@@ -79,10 +79,14 @@ class HomeFragment : Fragment() ,Animation.AnimationListener {
         observeBackStackEntry()              //Observe Back Stack Entry
         onPressBack()                        //Set On Press Back
         setOnItemSelectedListenerSpinner()   //Set On Click On Spinner
-        render()                             //Render
         setOnClickOnCalenderImage()          //Set On Click On Calender Image
 
         return homeView
+    }
+
+    override fun onResume() {
+        super.onResume()
+        render()
     }
 
 
