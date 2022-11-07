@@ -133,6 +133,10 @@ https://user-images.githubusercontent.com/99625111/177687895-3b0a3c95-079a-4927-
 
 ## Download Apk And Contact
 
+You Can Download Last Update V1.2 from Apk till it Updated On Google Play.
+
+- Apk : https://www.mediafire.com/file/qulo9uwj6ynwgqo/Weather+App.apk/file
+
 - Google Play : https://play.google.com/store/apps/details?id=com.weatherrrrrr.weatherapp 
 
 - Contact : youssefahmed505505@gmail.com
