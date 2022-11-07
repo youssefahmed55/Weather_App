@@ -1,4 +1,4 @@
-package com.weatherrrrrr.retrofitwithcoroutines.room
+package com.weatherrrrrr.weatherapp.ui.room
 
 import androidx.room.Dao
 import androidx.room.Insert

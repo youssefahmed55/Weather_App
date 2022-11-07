@@ -8,7 +8,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.*
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.MutableStateFlow
-import java.util.*
+import kotlinx.coroutines.flow.StateFlow
 import javax.inject.Inject
 
 @HiltViewModel
@@ -17,34 +17,24 @@ class WeekForecastViewModel @Inject constructor(private var weekForecastRepo: We
     private val _statusDaysChannel = Channel<DaysModelResponse>(Channel.UNLIMITED)
     val statesDays : Channel<DaysModelResponse> get() = _statusDaysChannel
 
-    private val _MutableStateFlowError = MutableStateFlow<String>("")
-    val statesError : MutableStateFlow<String> get() = _MutableStateFlowError
+    private val _mutableStateFlowError = MutableStateFlow<String>("")
+    val statesError : StateFlow<String> get() = _mutableStateFlowError
 
-    val handler = CoroutineExceptionHandler() { coroutinesContexts , throwable -> _MutableStateFlowError.value = throwable.message!!}
+    private val handler = CoroutineExceptionHandler() { _ , throwable -> _mutableStateFlowError.value = throwable.message!!}
 
      fun getWeatherOfSevenDays(cityName : String){
-        viewModelScope.launch(handler + Dispatchers.IO) {
-                val current = async { weekForecastRepo.getCurrentLatAndLonFromCityName(cityName,Locale.getDefault().language) }
-                val days = async() { current.await().coord?.lon?.let { current.await().coord?.lat?.let { it1 -> weekForecastRepo.getWeatherOfSevenDays(it1, it,Locale.getDefault().language) } } }
-                val daysResult = days.await()
-                statesDays.send(daysResult!!)
+        viewModelScope.launch(handler) {
+                val daysResult = weekForecastRepo.getWeatherOfSevenDays(cityName)
+                weekForecastRepo.saveDataBaseDaily(daysResult)
+                statesDays.send(daysResult)
          }
     }
 
 
-    fun deleteAndInsertD(daysModelResponse: DaysModelResponse?){
-        viewModelScope.launch(handler + Dispatchers.IO) {
-            if (daysModelResponse != null) {
-                launch { weekForecastRepo.deleteDataBaseDaily() }.join()
-                launch { weekForecastRepo.saveDataBaseDaily(daysModelResponse) }
-            }
-        }
-    }
 
     fun getDailyDataBase(){
-        viewModelScope.launch(handler + Dispatchers.IO) {
-            val data = weekForecastRepo.getDataBaseDaily()
-            statesDays.send(data)
+        viewModelScope.launch(handler) {
+            statesDays.send(weekForecastRepo.getDataBaseDaily())
         }
     }
 

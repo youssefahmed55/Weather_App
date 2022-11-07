@@ -1,9 +1,10 @@
-package com.weatherrrrrr.retrofitwithcoroutines.room
+package com.weatherrrrrr.weatherapp.ui.room
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.weatherrrrrr.weatherapp.ui.room.Converters
+
+
 import com.weatherrrrrr.weatherapp.pojo.CurrentModelResponse
 import com.weatherrrrrr.weatherapp.pojo.DaysModelResponse
 import com.weatherrrrrr.weatherapp.pojo.HourlyModelResponse

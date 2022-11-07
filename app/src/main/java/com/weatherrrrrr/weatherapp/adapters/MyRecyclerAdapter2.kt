@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.weatherrrrrr.weatherapp.R
 import com.weatherrrrrr.weatherapp.databinding.RecyclerItem2Binding
 import com.weatherrrrrr.weatherapp.pojo.DailyItem
@@ -20,8 +19,7 @@ class MyRecyclerAdapter2 constructor(var context : Context) : RecyclerView.Adapt
     }
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        Glide.with(context).load("https://openweathermap.org/img/w/" + list[position]?.weather?.get(0)?.icon.toString() + ".png").into(holder.holderBinding.imageRecyclerList2) //Load Image From Link
-        holder.holderBinding.item = list.get(position)
+        holder.holderBinding.item = list[position]
 
     }
 

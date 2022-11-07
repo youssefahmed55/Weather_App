@@ -33,11 +33,13 @@
         <entry key="..\:/WeatherApp/app/src/main/res/drawable/ic_weather_logo.xml" value="0.124" />
         <entry key="..\:/WeatherApp/app/src/main/res/drawable/wind.xml" value="0.124" />
         <entry key="..\:/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.16953125" />
-        <entry key="..\:/WeatherApp/app/src/main/res/layout/fragment_home.xml" value="0.28218465539661897" />
+        <entry key="..\:/WeatherApp/app/src/main/res/layout/fragment_home.xml" value="0.4" />
         <entry key="..\:/WeatherApp/app/src/main/res/layout/fragment_splash.xml" value="0.16953125" />
         <entry key="..\:/WeatherApp/app/src/main/res/layout/fragment_week_forecast.xml" value="0.4" />
         <entry key="..\:/WeatherApp/app/src/main/res/layout/recycler_item1.xml" value="0.16953125" />
         <entry key="..\:/WeatherApp/app/src/main/res/layout/recycler_item2.xml" value="0.536" />
+        <entry key="..\:/WeatherApp/app/src/main/res/layout/spinner_item.xml" value="0.16953125" />
+        <entry key="..\:/WeatherApp/app/src/main/res/layout/spinner_item2.xml" value="0.16953125" />
         <entry key="..\:/WeatherApp/app/src/main/res/menu/popup_menu.xml" value="0.17890625" />
       </map>
     </option>

@@ -51,13 +51,13 @@ class WeekForecastFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentWeekForecastBinding.inflate(inflater, container, false)
         weekForecastView = binding.root
 
         setTextOfCityNameOfLocation() //Set Text Of Location TextView
         onPressBackIcon()             //Set On CLick On BackIcon
-        onpressback()                 //Set On Press Back
+        onPressBack()                 //Set On Press Back
         observeDays()                 //Observe Days
 
         return weekForecastView
@@ -67,14 +67,13 @@ class WeekForecastFragment : Fragment() {
 
         lifecycleScope.launchWhenStarted {
             weekForecastViewModel.statesDays.consumeAsFlow().buffer().collect{
-                    weekForecastViewModel.deleteAndInsertD(it)  //Delete All Data From DataBase And Add New Days Model
                     setAdapter(it)                              //Set Adapter
             }
         }
         lifecycleScope.launchWhenStarted {
             weekForecastViewModel.statesError.collect{
                 Log.d(TAG, "observeDays: $it")
-                if (it.equals("Unable to resolve host \"api.openweathermap.org\": No address associated with hostname")){
+                if (it == "Unable to resolve host \"api.openweathermap.org\": No address associated with hostname"){
                     Toast.makeText(this@WeekForecastFragment.activity,getString(R.string.check_internet_connection),Toast.LENGTH_SHORT).show()
                 }
                 weekForecastViewModel.getDailyDataBase()       //Get Days Model From Room
@@ -95,7 +94,7 @@ class WeekForecastFragment : Fragment() {
     }
 
 
-    private fun onpressback() {
+    private fun onPressBack() {
         val callback: OnBackPressedCallback =
             object : OnBackPressedCallback(true /* enabled by default */) {
                 override fun handleOnBackPressed() {

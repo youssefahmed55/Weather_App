@@ -49,6 +49,7 @@
                             android:id="@+id/image_recyclerList"
                             android:layout_width="@dimen/_25sdp"
                             android:layout_height="@dimen/_25sdp"
+                            imageUrl="@{item.weather.get(0).icon}"
                             android:layout_marginTop="@dimen/_5sdp"
                             android:layout_gravity="center"
                             android:scaleType="fitXY" />

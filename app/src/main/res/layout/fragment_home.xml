@@ -12,7 +12,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/weather_background">
+        android:background="@drawable/weather_background"
+        >
 
         <!-- TODO: Update blank fragment layout -->
         <RelativeLayout
@@ -23,45 +24,37 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginStart="@dimen/_15sdp"
-            android:layout_marginEnd="@dimen/_15sdp">
+            android:layout_marginEnd="@dimen/_15sdp"
+
+            >
 
             <ImageView
                 android:id="@+id/locationImage_Home"
                 android:layout_width="@dimen/_15sdp"
                 android:layout_height="@dimen/_15sdp"
                 android:layout_alignParentStart="true"
-                android:layout_centerInParent="true"
                 android:paddingBottom="@dimen/_2sdp"
+                android:layout_centerInParent="true"
                 android:scaleType="fitXY"
                 android:src="@drawable/ic_baseline_location_on_24" />
 
-            <TextView
-                android:id="@+id/locationTextView_Home"
+            <Spinner
+                android:id="@+id/spinner_Home"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_toEndOf="@id/locationImage_Home"
-                android:fontFamily="@font/poppins_semibold"
-                android:text="@{viewModel.mutableCurrent.name}"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_15ssp" />
-
-            <ImageView
-                android:layout_width="@dimen/_15sdp"
-                android:layout_height="@dimen/_15sdp"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:layout_toEndOf="@id/locationTextView_Home"
-                android:layout_centerInParent="true"
-                android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/poppins_semibold" />
 
 
             <ImageView
                 android:id="@+id/calenderImage_Home"
                 android:layout_width="@dimen/_15sdp"
                 android:layout_height="@dimen/_15sdp"
-                android:layout_alignParentEnd="true"
                 android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
                 android:src="@drawable/ic_fi_rr_calendar" />
         </RelativeLayout>
 
@@ -112,7 +105,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:fontFamily="@font/poppins_semibolditalic"
-                    android:text="@{viewModel.mutableCurrent.main.feelsLike.intValue() + ` °` }"
+                    android:text="@{viewModel.currentModel.main.feelsLike.intValue() + ` °` }"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_11ssp" />
 
@@ -154,7 +147,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:fontFamily="@font/poppins_semibolditalic"
-                    android:text="@{viewModel.mutableCurrent.main.humidity.intValue() + ` °`}"
+                    android:text="@{viewModel.currentModel.main.humidity.intValue() + ` °`}"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_11ssp" />
 
@@ -181,6 +174,7 @@
                     android:layout_width="@dimen/_90sdp"
                     android:layout_height="@dimen/_90sdp"
                     android:layout_gravity="center"
+                    imageUrl="@{viewModel.currentModel.weather.get(0).icon}"
                     android:scaleType="fitXY" />
 
                 <TextView
@@ -189,7 +183,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/poppins_semibolditalic"
-                    android:text="@{viewModel.mutableCurrent.weather.get(0).description}"
+                    android:text="@{viewModel.currentModel.weather.get(0).description}"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_14ssp" />
@@ -201,7 +195,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:fontFamily="@font/poppins_semibolditalic"
-                    android:text="@{viewModel.mutableCurrent.main.temp.intValue() + ` °`}"
+                    android:text="@{viewModel.currentModel.main.temp.intValue() + ` °`}"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_25ssp" />
 
@@ -244,7 +238,7 @@
                     android:layout_marginTop="@dimen/_5sdp"
                     android:fontFamily="@font/poppins_semibolditalic"
                     android:textColor="@color/white"
-                    android:text="@{viewModel.mutableCurrent.wind.speed.toString() + ' ' + @string/Kmj}"
+                    android:text="@{viewModel.currentModel.wind.speed.toString() + ' ' + @string/Kmj}"
                     android:textSize="@dimen/_11ssp" />
 
             </LinearLayout>
@@ -285,7 +279,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:fontFamily="@font/poppins_semibolditalic"
-                    android:text="@{viewModel.mutableCurrent.main.pressure.toString() + ' ' + @string/mbar}"
+                    android:text="@{viewModel.currentModel.main.pressure.toString() + ' ' + @string/mbar}"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_11ssp" />
 

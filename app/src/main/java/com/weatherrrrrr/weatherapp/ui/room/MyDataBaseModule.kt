@@ -2,10 +2,6 @@ package com.weatherrrrrr.weatherapp.ui.room
 
 import android.app.Application
 import androidx.room.Room
-import com.weatherrrrrr.retrofitwithcoroutines.room.AppDatabase
-import com.weatherrrrrr.retrofitwithcoroutines.room.CurrentModelDao
-import com.weatherrrrrr.retrofitwithcoroutines.room.DaysModelDao
-import com.weatherrrrrr.retrofitwithcoroutines.room.HourlyModelDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

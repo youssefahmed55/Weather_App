@@ -3,6 +3,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.LocationManager
+import android.net.ConnectivityManager
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -73,6 +74,7 @@ class SplashFragment : Fragment() {
     private fun getCurrentLocation(){
         if(checkPermission()){         //Check Get Location Permission
            if(isLocationEnabled()){    //Check If Location Enabled
+               checkConnectionType()
                fusedLocationListener() //Listener For Location
 
            }else{
@@ -109,6 +111,7 @@ class SplashFragment : Fragment() {
                             // use your location object
                             // get latitude , longitude and other info from this
                         }else{
+
                             Log.d(TAG, "onLocationResult: empty ")
                         }
                     }
@@ -124,7 +127,7 @@ class SplashFragment : Fragment() {
         }
     }
     fun navigateWithSendLatAndLon(lat : Double , lon : Double){
-        var bundle = Bundle()        //Initialize Bundle
+        val bundle = Bundle()        //Initialize Bundle
         bundle.putDouble("lat" , lat)
         bundle.putDouble("lon",lon)
 
@@ -171,7 +174,24 @@ class SplashFragment : Fragment() {
 
     }
 
+fun checkConnectionType() {
+val connectionManager =
+    activity!!.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+val wifi_Connection = connectionManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI)
+val mobile_data_connection =
+    connectionManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE)
 
+if (wifi_Connection != null) {
+    if (!wifi_Connection.isConnectedOrConnecting) {
+        if (mobile_data_connection != null) {
+            if (!mobile_data_connection.isConnectedOrConnecting) {
+                Toast.makeText(this.activity, getString(R.string.Noo_Network_Connection), Toast.LENGTH_SHORT)
+                    .show()
+            }
+        }
+    }
+}
+}
 
 
     companion object {
