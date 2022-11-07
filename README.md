@@ -68,11 +68,10 @@ implementation("com.google.dagger:hilt-android:2.38.1")
 kapt("com.google.dagger:hilt-android-compiler:2.38.1")
 ```
 
-- Glide
+- Picasso
 
 ```css
-implementation 'com.github.bumptech.glide:glide:4.11.0'
-annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+implementation 'com.squareup.picasso:picasso:2.5.2'
 ```
 
 - Retrofit
@@ -134,8 +133,6 @@ https://user-images.githubusercontent.com/99625111/177687895-3b0a3c95-079a-4927-
 
 ## Download Apk And Contact
 
-- Downioad Apk : https://www.mediafire.com/file/uywdzxkhvl7yb99/Weather+App.apk/file
-
 - Google Play : https://play.google.com/store/apps/details?id=com.weatherrrrrr.weatherapp 
 
-- Contact : joussefahmed2012@gmail.com
+- Contact : youssefahmed505505@gmail.com
